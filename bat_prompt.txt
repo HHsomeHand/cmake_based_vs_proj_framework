@@ -1,0 +1,8 @@
+关闭 vs 进程
+清除 vsproj_x64 下的所有内容
+然后 cd vsproj_x64
+cmake ..
+然后复制 ../清理.bat 到当前目录
+然后打开 sln
+
+生成这份 bat, 并保留每段注释
