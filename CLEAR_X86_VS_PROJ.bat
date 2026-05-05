@@ -1,3 +1,8 @@
+REM === 关闭 Visual Studio 相关进程 ===
+echo Closing Visual Studio processes...
+taskkill /f /im devenv.exe >nul 2>&1
+taskkill /f /im msbuild.exe >nul 2>&1
+
 REM === 清空 vsproj_x86 目录 ===
 echo Cleaning vsproj_x86 directory...
 if exist vsproj_x86 (

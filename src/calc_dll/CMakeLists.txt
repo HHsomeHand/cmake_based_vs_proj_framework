@@ -18,10 +18,4 @@ target_compile_definitions(calc_dll
             CALC_DLL
 )
 
-set_target_properties(calc_dll PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/build
-        RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/build
-
-        ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/build
-        ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/build
-)
+SetTargetOutput(calc_dll)

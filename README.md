@@ -83,3 +83,22 @@ Win32 Does not match the platform used previously: Either remove the CMakeCache.
 我们这里用 `vsporj_x64` 和`vsproj_x86`来保存不同架构的 vs 工程
 
 `cmake -A X64 ..` `cmake -A Win32 ..`
+
+
+
+## VS 的小问题
+
+如果没有 dllexport 函数, 没有用 `__declspec(dllexport)` 修饰函数定义
+
+dll 项目将不会生成 lib 文件
+
+记得在 dll 的函数里, `#include "calc_dll.hpp"`
+
+不然编译时不会出现下面这一行
+
+```cmake
+3>  正在创建库 xx/build/calc_dll.lib 和对象 xx/build/calc_dll.exp
+```
+
+然后编译 exe 的时候, 报错, 会显示找不到 import lib
+

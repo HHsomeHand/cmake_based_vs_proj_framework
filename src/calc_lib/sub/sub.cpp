@@ -4,7 +4,7 @@
 
 #include <iostream> // use cout
 
-#include "calc_dll.hpp"
+#include "calc_lib.hpp"
 
 int sub(int a, int b)
 {

@@ -2,7 +2,7 @@
 // Created by hwh on 2026/5/3.
 //
 
-#include "calc_dll.hpp"
+#include "calc_lib.hpp"
 
 int add(int a, int b)
 {
