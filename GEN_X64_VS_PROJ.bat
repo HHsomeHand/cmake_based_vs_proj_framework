@@ -27,5 +27,8 @@ for %%f in (*.sln) do (
     start "" "%%f"
 )
 
+REM === 7. Ìí¼Ó .gitkeep ÎÄ¼þ ===
+type nul > vsproj_x64\.gitkeep
+
 echo Done.
 pause
